@@ -13,13 +13,13 @@
     <div class="container-navbar">
         <nav class="wrapper">
             <div class="brand">
-                <img src="assets/logo.png" height="40px" width="40px" />
+                <img class="logo" src="assets/logo.png" height="40px" width="40px" />
             </div>
             <ul class="ul-navbar">
                 <li><a href="#home"><strong>Home</strong></a></li>
-                <li><a href=""><strong>Our Profile</strong></a></li>
+                <li><a href="#profile"><strong>Our Profile</strong></a></li>
                 <li><a href="#achivement"><strong>Achivement</strong></li>
-                <li class="special"><a href="#contact"><strong>Massage Us</strong></a></li>
+                <li class="special"><a href="#contact"><strong>Message Us</strong></a></li>
             </ul>
         </nav>
     </div>
@@ -28,26 +28,94 @@
         <h2>
             Hi
         </h2>
-        <h1 id="user">User</h1>
+        <h1 class="user" id="user"></h1>
         <h2>
-            , Welcome to Website
+            ,Welcome to Website
         </h2>
+        <h3>
+            Indonesia’s Largest Professional Skilling Platform
+        </h3>
         <p>
-            ini adalah website latihan pertama untuk menjadi software engineer
+            Master today’s digital skills with industry leaders, get personalized mentorship, and access a community rich in career opportunities!
         </p>
-        <div class="banner">
-            <img src="assets/banner.png">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/image1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/image2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/image3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/image4.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 
+    <!-- Sub Content -->
     <div id="achivement" class="secondary-content">
         <h2>
             Achivement
         </h2>
-        <div class="achivement-icon">
-            <img src="assets/HTML5.png">
-            <img class="img-special" src="assets/CSS3.png">
-            <img src="assets/JavaScript.png">
+        <div class="list-achivement">
+            <table class="list-icons">
+                <tr>
+                    <td><img class="achivement-icon" src="assets/analy.png"></td>
+                    <td><img class="achivement-icon" src="assets/business.png"></td>
+                    <td><img class="achivement-icon" src="assets/supply-chain.png"></td>
+                    <td><img class="achivement-icon" src="assets/software-engineer.png"></td>
+                    <td><img class="achivement-icon" src="assets/group.png"></td>
+                </tr>
+                <tr>
+                    <th>Data Analytics</th>
+                    <th>Digital Marketing</th>
+                    <th>Product Management</th>
+                    <th>Software Engineering</th>
+                    <th>Leaders Academy</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Sub Content -->
+    <div id="profile" class="third-content">
+        <h2>
+            Vision and Mission
+        </h2>
+        <div class="first">
+            <h3>
+                Empathy
+            </h3>
+            <p>
+                We always try to put ourselves in other people’s shoes. Be it our team member, our direct report or our manager. We act with compassion and think about the consequences of our behavior on the other person, regardless of the hierarchical relationship.
+                We are empathetic with our colleagues but also, and especially with our most important stakeholder: our students. We understand how much anxiety comes with starting or changing a career and in particular in looking for a new job. Whenever
+                take this for granted, and try to support our students as much as we cannot only in equipping them with the most effective technical skills but in providing them all the psychological support they need.
+            </p>
+        </div>
+        <div class="second">
+            <h3>
+                Respect
+            </h3>
+            <p>
+                We treat people with the same respect regardless of their seniority and role in the company. We are as kind with our older teammates as we are with the new intern who just started last Monday. We respect each and every one of our students as if our overall
+                business depended on that very one student. No matter how many thousands and millions of professional lives we are able to touch, we never forget that behind such aggregate numbers are unique people and life stories..
+            </p>
+        </div>
+        <div class="third">
+            <h3>
+                Selflessness
+            </h3>
+            <p>
+                Despite being extremely driven and ambitious about our own career, we are leaving your ego at RevoU’s entrance door. We make time to help our colleagues, even if it doesn’t directly benefit us (or our team). We are lifting everyone around us as we genuinely
+                want them to succeed. We believe that career progression at RevoU is not a zero-sum game: helping each other will benefit everyone’s career. We are aware that our drive and selflessness put us at risk of forgetting about our own well-being
+                and we are not afraid to take a step back when necessary, balancing the intensity of our day-to-day work with periods of deserved rest.
+            </p>
         </div>
     </div>
 
@@ -60,18 +128,18 @@
                 <div class="left">
                     <p for="nameInput">Nama</p>
                     <p for="ttlInput">Tanggal Lahir</p>
-                    <p for="irGender">Jenis Kelamin</p>
+                    <p>Jenis Kelamin</p>
                     <p for="messageInput">Pesan</p>
                 </div>
                 <div class="right">
                     <input type="text" id="nameInput">
-                    <input type="text" id="ttlInput">
+                    <input type="date" id="ttlInput" name="tanggal">
                     <div class="radio-button">
                         <label>
-                            <input type="radio" name="gender" value="Laki-laki" id="cowoRadio"> Laki-laki
+                            <input type="radio" name="gender" value="Laki-laki" id="maleRadio"> Laki-laki
                         </label>
                         <label>
-                            <input type="radio" name="gender" value="Perempuan" id="ceweRadio"> Perempuan
+                            <input type="radio" name="gender" value="Perempuan" id="femaleRadio"> Perempuan
                         </label>
                     </div>
                     <textarea rows="6" id="messageInput"></textarea>
@@ -79,10 +147,7 @@
             </div>
             <div class="response">
                 <div class="display">
-                    <p id="displayName"></p>
-                    <p id="displayTtl"></p>
-                    <p id="displayGender"></p>
-                    <p id="displayMessage"></p>
+                    <p id="displayValues"></p>
                 </div>
             </div>
         </div>

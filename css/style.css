@@ -7,8 +7,6 @@ body {
 }
 
 .container-navbar {
-    /* background-color: white;
-    position: fixed; */
     justify-content: center;
     align-content: center;
     display: flex;
@@ -22,6 +20,10 @@ body {
     justify-content: space-between;
     width: 90%;
     height: fit-content;
+}
+
+.logo {
+    height: 40px;
 }
 
 .ul-navbar {
@@ -40,7 +42,7 @@ body {
 }
 
 .special {
-    background-color: yellow;
+    background-color: #fede3e;
     border-radius: 4px;
     height: fit-content;
 }
@@ -48,17 +50,65 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: auto;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.banner {
-    display: flex;
-    align-content: center;
+.user {
+    color: #f13b57;
+}
+
+.slideshow-container {
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.mySlides {
     justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #555;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .secondary-content {
@@ -68,27 +118,64 @@ body {
     padding-right: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
-    background-color: yellow;
-    height: 200px;
+    background-color: #fede3e;
+    height: auto;
 }
 
 .secondary-content>h2 {
     padding-bottom: 10px;
 }
 
-.achivement-icon {
-    justify-content: center;
-    height: fit-content;
-    padding: 30px;
-    display: flex;
+td,
+th {
+    text-align: center;
 }
 
-.img-special {
-    padding-left: 50px;
-    padding-left: 30px;
+.achivement-icon {
+    width: 20%;
+}
+
+.third-content {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.third-content>h2 {
+    padding-bottom: 20px;
+}
+
+.first {
+    padding: 10px;
+}
+
+.first>h3 {
+    color: #f13b57;
+    padding-bottom: 10px;
+}
+
+.second {
+    padding: 10px;
+}
+
+.second>h3 {
+    color: #f13b57;
+    padding-bottom: 10px;
+}
+
+.third {
+    padding: 10px;
+}
+
+.third>h3 {
+    color: #f13b57;
+    padding-bottom: 10px;
 }
 
 .contact-content {
+    background-color: #eee;
     display: flex;
     flex-direction: column;
     padding-left: 100px;
@@ -96,12 +183,10 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     height: 300px;
-    /* background-color: aqua; */
 }
 
 .form-message {
     display: flex;
-    /* background-color: blueviolet; */
 }
 
 .input {
@@ -128,7 +213,7 @@ input,
 textarea {
     padding: 2px;
     margin: 4px;
-    background-color: #eee;
+    background-color: ghostwhite;
     border: none;
 }
 
@@ -146,13 +231,13 @@ textarea {
 
 .display {
     padding: 6px;
-    background-color: #eee;
-    height: 200px;
+    background-color: ghostwhite;
+    height: 180px;
 }
 
 button {
     color: white;
-    background-color: red;
+    background-color: #f13b57;
     border: none;
     height: 30px;
     border-radius: 6px;
