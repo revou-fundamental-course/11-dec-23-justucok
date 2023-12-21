@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-navbar">
+        <nav class="wrapper">
+            <div class="brand">
+                <img src="assets/logo.png" height="40px" width="40px" />
+            </div>
+            <ul class="ul-navbar">
+                <li><a href="#home"><strong>Home</strong></a></li>
+                <li><a href=""><strong>Our Profile</strong></a></li>
+                <li><a href="#achivement"><strong>Achivement</strong></li>
+                <li class="special"><a href="#contact"><strong>Massage Us</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Main Content -->
+    <div id="home" class="main-content">
+        <h2>
+            Hi
+        </h2>
+        <h1 id="user">User</h1>
+        <h2>
+            , Welcome to Website
+        </h2>
+        <p>
+            ini adalah website latihan pertama untuk menjadi software engineer
+        </p>
+        <div class="banner">
+            <img src="assets/banner.png">
+        </div>
+    </div>
+
+    <div id="achivement" class="secondary-content">
+        <h2>
+            Achivement
+        </h2>
+        <div class="achivement-icon">
+            <img src="assets/HTML5.png">
+            <img class="img-special" src="assets/CSS3.png">
+            <img src="assets/JavaScript.png">
+        </div>
+    </div>
+
+    <div id="contact" class="contact-content">
+        <h2>
+            Message Us
+        </h2>
+        <div class="form-message">
+            <div class="input">
+                <div class="left">
+                    <p for="nameInput">Nama</p>
+                    <p for="ttlInput">Tanggal Lahir</p>
+                    <p for="irGender">Jenis Kelamin</p>
+                    <p for="messageInput">Pesan</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="nameInput">
+                    <input type="text" id="ttlInput">
+                    <div class="radio-button">
+                        <label>
+                            <input type="radio" name="gender" value="Laki-laki" id="cowoRadio"> Laki-laki
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Perempuan" id="ceweRadio"> Perempuan
+                        </label>
+                    </div>
+                    <textarea rows="6" id="messageInput"></textarea>
+                </div>
+            </div>
+            <div class="response">
+                <div class="display">
+                    <p id="displayName"></p>
+                    <p id="displayTtl"></p>
+                    <p id="displayGender"></p>
+                    <p id="displayMessage"></p>
+                </div>
+            </div>
+        </div>
+        <button id="sendBtn" onclick="getValue()"><strong>Kirim</strong></button>
+    </div>
+
+    <!-- Footer Content -->
+    <footer class="container-footer">
+        <p>Created By Abdurrahman Yusuf Wijasena</p>
+    </footer>
+</body>
+
+</html>
